@@ -1,0 +1,141 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--background-color2);
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid var(--border-color1);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
+
+.headerTitle {
+  color: var(--text-color1);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.headerTitleCurrency {
+  color: var(--text-color2);
+}
+
+.headerControls {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.headerControls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.headerControls button,
+.reconnecting {
+  margin-left: 0.5rem;
+  color: var(--text-color1);
+}
+
+.headerControls button:disabled {
+  color: var(--text-color3);
+  cursor: auto;
+}
+
+.headerPrecBtn {
+  width: 3rem;
+  height: 3rem;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+  min-height: 47.5rem;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--text-color1);
+  font-size: 1.4rem;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: calc(50% - 1rem);
+}
+
+.colRowGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.colHeaderTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.colHeaderTitleBid {
+  color: var(--text-color4);
+}
+
+.colHeaderTitleAsk {
+  color: var(--text-color5);
+}
+
+.colHeaderCell {
+  color: var(--text-color2);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 0.5px;
+  width: 33.33%;
+  font-weight: 500;
+}
+
+.colHeaderCellBid {
+  text-align: right;
+}
+
+.cells {
+  color: var(--text-color1);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  width: 33.33%;
+  white-space: nowrap;
+}
+
+.cellsBid {
+  justify-content: flex-end;
+}
